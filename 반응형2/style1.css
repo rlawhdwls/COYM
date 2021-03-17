@@ -1,0 +1,153 @@
+/*Animation*/
+@keyframes rolling {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  75% {
+    transform: translateY(-60%);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
+}
+/*CSS Reset*/
+body {
+  margin: 0;
+  background-color: #111;
+  color: #999;
+}
+h1,
+h2,
+p,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2 {
+  font-size: 100%;
+  font-weight: normal;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*  */
+
+.portrait {
+  background-image: url(images/profile2.png);
+  background-size: cover; /*적절한 높이 너비로 사진 조정*/
+  background-position: center; /*배경 중앙 정렬*/
+  padding-top: 56.25%; /* 16:9 */
+}
+.protrait {
+}
+
+.profile {
+  padding: 5%;
+}
+
+.content1,
+.content2 {
+  padding-bottom: 14%;
+}
+.content2 h2 {
+  border-top: 3px solid;
+  color: orangered;
+  margin-bottom: 30px;
+}
+
+.content1 {
+}
+.name {
+  font-size: 50px;
+  line-height: 1.5;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-family: "Gochi Hand", cursive;
+}
+.name-job {
+  display: inline-block; /* 직업목록을 묶음*/
+  color: white;
+  background-color: #111;
+  vertical-align: top; /*i'm a 를 맨위로*/
+  overflow: hidden;
+  height: 1.5em;
+  padding: 0 0.5em;
+  position: relative;
+}
+.name-job::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 10px 10px #111;
+}
+.name-job-list {
+  animation-name: rolling;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  margin-top: -1.5px;
+}
+.name-title {
+  font-size: 2.5em;
+  line-height: 1;
+  color: grey;
+  margin-left: 0.5em;
+}
+
+.icons {
+  margin: 20px 0;
+}
+.icons a {
+  background-image: url(images/icons.png);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  text-indent: -9999px;
+}
+.icons a.twitter {
+  background-position: left top;
+}
+.icons a.facebook {
+  background-position: center top;
+}
+.icons a.pinterest {
+  background-position: right top;
+}
+.icons a:hover {
+  background-position-y: bottom;
+}
+.timeline {
+  font-size: 0.6rem;
+  color: #777;
+}
+
+.timeline li {
+  padding-bottom: 30px;
+}
+.timeline li:last-child {
+  padding-bottom: 0;
+}
+.timeline h3 {
+  display: inline-block;
+  color: orange;
+  margin: 0;
+  border-right: 3px solid;
+  letter-spacing: 0.2em;
+  padding-right: 0.5em;
+}
