@@ -570,10 +570,17 @@ svg path {
 
 @media (max-width: 640px) {
   #hero .wrapper {
+    flex-direction: column-reverse;
   }
   #hero .wrapper .welcome h1 {
     margin: 10rem 0 5rem 0;
     font-size: 3rem;
+  }
+  #hero .wrapper .welcome {
+    height: 60%;
+  }
+  #hero .wrapper .coym {
+    max-width: 10rem;
   }
 }
 
@@ -685,9 +692,17 @@ svg path {
   font-weight: 100;
 }
 @media (max-width: 640px) {
+  #about .wrapper {
+    flex-direction: column;
+    margin: 5% auto 5% auto;
+  }
   #about .wrapper .blurb h2 {
     margin-bottom: 20px;
     font-size: 30px;
+  }
+  #about .wrapper .introduce {
+    box-shadow: 5px 5px 5px rgba(17, 17, 17, 0.5);
+    margin-bottom: 5%;
   }
 }
 
