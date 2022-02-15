@@ -103,3 +103,57 @@ main{
     background-color: rgba(207, 109, 109, 0.5);
 }
     
+@media (max-width : 540px){
+    /* 필수+실무 ul */
+    .must_ul,
+    .maybe_ul{
+        width:100%;
+        /* background-color: rgba(194, 194, 194, 0.2); */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border: 3px solid rgba(207, 109, 109, 0.5);
+
+    }
+    
+    /* 필수+실무 li */
+    .must_li,
+    .maybe_li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:10rem;
+        height: 10rem;
+        font-size: 1.5rem;
+        color: rgb(43, 55, 59);
+        background-color: rgba(194, 194, 194, 0.3);
+        margin:1rem;
+    }
+}
+@media (max-width : 340px){
+    /* 필수+실무 ul */
+    .must_ul,
+    .maybe_ul{
+        width:100%;
+        /* background-color: rgba(194, 194, 194, 0.2); */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border: 3px solid rgba(207, 109, 109, 0.5);
+
+    }
+    
+    /* 필수+실무 li */
+    .must_li,
+    .maybe_li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:7rem;
+        height: 7rem;
+        font-size: 1rem;
+        color: rgb(43, 55, 59);
+        background-color: rgba(194, 194, 194, 0.3);
+        margin:1rem;
+    }
+}
