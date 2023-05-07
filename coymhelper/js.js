@@ -1,24 +1,24 @@
-var didScroll; // 스크롤시에 사용자가 스크롤했다는 것을 알림 
-const header =document.querySelector('header'); 
-$(window).scroll(function(event){ 
-    didScroll = true; 
-});
-// hasScrolled()를 실행하고 didScroll 상태를 재설정 
-setInterval(function() {
-    if (didScroll) { 
-        hasScrolled(); 
-        didScroll = false;
-    } 
-}, 250); 
+// var didScroll; // 스크롤시에 사용자가 스크롤했다는 것을 알림 
+// const header =document.querySelector('header'); 
+// $(window).scroll(function(event){ 
+//     didScroll = true; 
+// });
+// // hasScrolled()를 실행하고 didScroll 상태를 재설정 
+// setInterval(function() {
+//     if (didScroll) { 
+//         hasScrolled(); 
+//         didScroll = false;
+//     } 
+// }, 250); 
 
 
-function hasScrolled() {
-    // 동작을 구현 
-    // header.style.opacity = `30%`;
-}
-// 스크롤을 내릴 때 헤더 부분 반 투명화
-//1.스크롤을 내렸을때 boolean
-//2.
+// function hasScrolled() {
+//     // 동작을 구현 
+//     // header.style.opacity = `30%`;
+// }
+// // 스크롤을 내릴 때 헤더 부분 반 투명화
+// //1.스크롤을 내렸을때 boolean
+// //2.
 
 
 
@@ -178,3 +178,17 @@ window.onload = function() {
 
 //function
 //끝!
+let box1 = document.querySelector('.box1');
+let box2 = document.querySelector('.box2');
+let box_bt = document.querySelector('#box');
+	function box(){
+		if(box1.style.display!=='none'){
+			box1.style.display='none';
+            box2.style.display='flex';
+            box_bt.value='작업';
+		}else{
+			box1.style.display='flex';
+            box2.style.display='none';
+            box_bt.value='WEB';
+		}
+	}
